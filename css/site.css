@@ -1,0 +1,29 @@
+header, footer {
+    background-color: lightgray;
+    border: solid 1px black;
+    /* font-family: "Times New Roman", serif; */
+}
+
+footer {
+    padding: 10px;
+    border-radius: 3px;
+}
+body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 14px;
+}
+
+/* footer { */
+    /* background-color: lightgray; */
+    /* border: solid 1px black; */
+/* } */
+
+#main {
+    border: solid 1px  #ccc;
+    border-radius: 5px;
+    color: #202020;
+    /* margin: 20px 0px 20px 0px; */
+    margin: 20px 0px;
+    padding: 5px;
+    
+}

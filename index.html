@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML.CSS.JS Practice</title>
+    <!--if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"</script>
+    <![endif}-->
+    <link rel="stylesheet" href="css/site.css" />
 </head>
 <body>
     <header>
@@ -21,11 +25,23 @@
     </header>
     
     
-    <section>
+    <section id="main">
         <p>In this <em>sample site</em>, we will show a list of <a href="github.com">Github</a>
         projects <span>and the data </span>about <strong>those projects</strong>.</p>
-    <form>
-        <input />
+    <form action="http://wilder.azurewebsites.net/echo" mehtod="POST">
+        <label for="searchPhrase">Search Phrase:</label>
+        <input name="searchPhrase" id="searchPhrase"/><br/>
+        <input type="checkbox" name="useStars" id="useStars" checked="true"/> 
+        <label for="useStars">Use Stars?</label><br/>
+        <label for="landChoice">Language: </label>
+        <select name="langChoice" id="langChoice">
+            <option selected>All</option>
+            <option>Javascript</option>
+            <option>C#</option><br/>
+            <option>Java</option>
+            <option>Ruby</option>            
+        </select>
+        <br/>
         <input type="submit" value="search"/> 
     </form>
     </section>
